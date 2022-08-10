@@ -10,7 +10,7 @@ html{
 }
 body{
     font-family: 'Poppins', sans-serif;
-
+    /* background-color: #aaa; */
 }
 /* ############### utility class ################### */
 .container{
@@ -18,6 +18,20 @@ body{
     width: 90%;
     margin: 0 auto;
     /* border: 2px solid red; */
+}
+.btn{
+    display: inline-block;
+    padding: 1em 2.5em;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+    /* margin-bottom: ; */
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 1em;
+}
+.btn-primary{
+    background-color: #16a083;
 }
 
 /* ############ navbar styling ################# */
@@ -30,17 +44,25 @@ body{
 .navbar .navbar-container a{
     text-decoration: none;
     color: #000;
+    font-weight: 500;
+    transition: color 0.2s ease-in-out;
+}
+.navbar .navbar-container a:hover{
+    color: #117964;
 }
 .navbar .navbar-container .menu-items{
     /* border: 2px solid purple; */
     /* display: inline-block; */
     list-style: none;
+    order: 2;
+    display: flex;
 
 }
 .navbar .navbar-container ul li{
     /* border: 1px solid red; */
-    display: inline-block;
+    /* display: inline-block; */
     margin: 1em;
+    font-size: 1.3rem;
 }
 .navbar .navbar-container h1 {
     /* border: 2px solid red; */
@@ -59,7 +81,7 @@ body{
 }
 .navbar-container{
     display: flex;
-    flex-direction: row-reverse;
+    /* flex-direction: row-reverse; */
     justify-content: space-around;
     height: 50;
     align-items: center;
@@ -67,4 +89,30 @@ body{
 }
 .navbar .logo{
     font-size: 3.5rem;
+    order: 1;
+}
+
+/* #################### showcase ###################### */
+.showcase{
+    background: url(img/header-image2.jpg);
+    background-position: center;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    height: 50vh;
+}
+.showcase-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 1.6rem;
+    border: 2px solid red;
+}
+.showcase-container .btn{
+    text-decoration: none;
+    color: white;
+}
+.showcase-container .main-title{
+    text-transform: uppercase;
 }
