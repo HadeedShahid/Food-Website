@@ -27,9 +27,20 @@ body{
 .navbar .navbar-container .hamburger-lines{
     display: none;
 }
-.navbar .navbar-container ul li{
-    /* border: 2px solid red; */
+.navbar .navbar-container a{
+    text-decoration: none;
+    color: #000;
+}
+.navbar .navbar-container .menu-items{
+    /* border: 2px solid purple; */
     /* display: inline-block; */
+    list-style: none;
+
+}
+.navbar .navbar-container ul li{
+    /* border: 1px solid red; */
+    display: inline-block;
+    margin: 1em;
 }
 .navbar .navbar-container h1 {
     /* border: 2px solid red; */
@@ -37,7 +48,7 @@ body{
 }
 .navbar{
     /* display: flex; */
-    border: 2px solid red;
+    /* border: 2px solid red; */
     box-shadow: 0px 5px 10px 0px #aaa;
     position: fixed;
     width: 100%;
@@ -48,8 +59,12 @@ body{
 }
 .navbar-container{
     display: flex;
-    justify-content: space-between;
-    height: 64px;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    height: 50;
     align-items: center;
-    border: 2px solid green;
+    /* border: 2px solid green; */
+}
+.navbar .logo{
+    font-size: 3.5rem;
 }
