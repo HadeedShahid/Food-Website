@@ -107,7 +107,7 @@ body{
     justify-content: center;
     height: 100%;
     font-size: 1.6rem;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 .showcase-container .btn{
     text-decoration: none;
@@ -115,4 +115,69 @@ body{
 }
 .showcase-container .main-title{
     text-transform: uppercase;
+}
+
+
+/* ############ about us ################# */
+.about{
+    padding: 5em 0px;
+    background-color: #f5f5f7;
+}
+.about-container{
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 2px solid red; */
+    Align-items: center
+}
+.about h2{
+    font-size: 3.2rem;
+}
+.about p{
+    font-size:1.6rem;
+    color:#555;
+}
+.about .small{
+    font-size: 1.6rem;
+    color: #666;
+    font-weight: 600;
+}
+.about-image{
+    flex: 1 1 400px;
+    padding: 30px;
+    /* border: 1px solid red; */
+    animation: about-img-anim;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    transform: translate(150%);
+}
+@keyframes about-img-anim{
+    100%{
+        transform: translate(0);
+    }
+}
+.about-text{
+    flex: 1 1 400px;
+    padding: 30px;
+    /* margin: auto; */
+    animation: about-img-txt;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    transform: translate(-150%);
+}
+@keyframes about-img-txt{
+    100%{
+        transform: translate(0);
+    }
+}
+.about-image img{
+    display: block;
+    height: 400px;
+    /* height: 100%; */
+    max-width: 100%;
+    margin: 0 auto;
+    object-fit: cover;
+    object-position: right;
+    
 }
