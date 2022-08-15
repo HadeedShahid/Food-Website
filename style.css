@@ -184,7 +184,7 @@ body{
 
 /* #################### food ##################### */
 .food{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     padding: 5em 0 10em 0;
     /* text-align: center; */
 }
@@ -218,6 +218,7 @@ body{
 }
 .img-container{
     /* flex: 1 1 400px; */
+    border: 2px solid red;
     margin: 0 1rem;
     position: relative;
 }
@@ -258,3 +259,62 @@ body{
     opacity: 1;
     top: 40%;
 }
+
+/* ################ food-menu ######################### */
+.food-menu p{
+    padding: 0;
+    font-size: 1.4rem;
+    color: #555;
+    font-weight: 500;
+}
+.food-menu-heading{
+    font-size: 4rem;
+    text-align: center;
+    font-weight: normal;
+    color: #666;
+}
+.food-menu-container{
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid red;
+    padding: 5em 0 3em 0;
+}
+.food-menu .food-img{
+    border: 2px solid black;
+    /* display: flex; */
+    /* min-height: 140px; */
+}
+.food-menu img{
+    display: block;
+    width: 250px;
+    height: 250px;
+    min-width: 90px;
+    min-height: 90px;
+    border-radius: 50%;
+
+    object-fit: cover;
+    object-position: center;
+    /* margin: auto; */
+    /* height: 100%; */
+}
+.food-menu-item{
+    display: flex;
+    border: 2px solid red;
+    flex: 1 1 500px;
+    justify-content: space-evenly;
+    margin-bottom: 3rem;
+}
+.food-desc{
+    margin: auto 2rem;
+}
+.food-title{
+    font-size: 2.2rem;
+    font-weight: 400;
+    color:#444;
+}
+
+.food-desc .food-price{
+    color: #117964;
+    font-weight: 700;
+}
+
