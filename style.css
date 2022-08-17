@@ -458,3 +458,169 @@ body{
     font-weight: 400;
     font-size: 2rem;
 }
+
+/* ############ media queries ############# */
+@media (max-width:768px){
+    .navbar{
+        opacity: 0.98;
+    }
+    .navbar .navbar-container input[type='checkbox'],
+    .navbar .navbar-container .hamburger-lines{
+        display: block;
+    }
+    .navbar .navbar-container{
+        display: block;
+        position: relative;
+        height: 64px;
+        /* border: 2px solid red; */
+
+    }
+    .navbar .navbar-container input[type='checkbox']{
+        position: absolute;
+        height: 32px;
+        width: 40px;
+        top: 20px;
+        left: 20px;
+        z-index: 5;
+        opacity: 0;
+    }
+    .navbar .navbar-container .hamburger-lines{
+        /* display: block; */
+        height: 32px;
+        width: 40px;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .navbar .navbar-container .hamburger-lines .line{
+        display: block;
+        height: 4px;
+        width: 100%;
+        border-radius: 10px;
+        background: #333;
+    }
+    .navbar .navbar-container .hamburger-lines .line1{
+        transform-origin: 0% 0% ;
+        transition: transform 0.4s ease-in-out;
+    }
+    .navbar .navbar-container .hamburger-lines .line2{
+        transition: transform 0.4s ease-in-out;
+    }
+    .navbar .navbar-container .hamburger-lines .line3{
+        transform-origin: 0% 100% ;
+        transition: transform 0.4s ease-in-out;
+    }
+    .navbar .menu-items{
+        /* display: absolute; */
+        padding: 100px;
+        background-color: #fff;
+        height: 100vh;
+        max-width: 300px;
+        transform: translateX(-150%);
+        display: flex;
+        flex-direction: column;
+        margin-left: -40px;
+        padding-left: 40px;
+        transition: transform 0.4s ease-in-out;
+        box-shadow: 5px 0px 10px 0px #aaa;
+        /* border: 2px solid red; */
+    }
+    .navbar .navbar-container .menu-items li{
+        margin-bottom: 2em;
+        font-size: 1.6rem;
+        font-weight: 500;
+        /* border: 2px solid red; */
+    }
+    .navbar .logo{
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 3rem;
+    }
+    .navbar .navbar-container input[type='checkbox']:checked ~ .menu-items{
+        transform: translateX(0);
+    }
+    .navbar .navbar-container input[type='checkbox']:checked ~ .hamburger-lines .line1{
+        transform: rotate(45deg);
+    }
+    .navbar .navbar-container input[type='checkbox']:checked ~ .hamburger-lines .line2{
+        /* transform: scaleY(0) */
+        display: none;
+    }
+    .navbar .navbar-container input[type='checkbox']:checked ~ .hamburger-lines .line3{
+        transform: rotate(-45deg);
+    }
+   
+    /* ####### food cat ########### */
+    .food-container{
+        flex-direction: column;
+        /* border: 2px solid red; */
+        /* align-items: stretch; */
+        /* justify-content: flex-end; */
+    }
+    .food-type:not(:last-child){
+        margin-bottom: 3em;
+    }
+    .food-type{
+        box-shadow: 5px 5px 10px 0px #aaa;
+    }
+    .food .img-container{
+        margin: 0;
+    }
+}
+
+
+@media (max-width: 577px){
+    html{
+        font-size: 50%;
+    }
+    .testimonial-container{
+        flex-direction: column;
+        /* text-align: center; */
+    }
+    .food-menu-container img{
+        width: 120px;
+        height: 120px;
+        /* margin: auto; */
+        /* border: 2px solid red; */
+    }
+    .food-menu-container{
+      /* border: 2px solid red; */
+    }
+    .food-menu-item {
+        /* text-align: center; */
+        /* margin: auto; */
+        /* border: 2px solid red; */
+        padding: 0 2em;
+    }
+    .food-menu-item .food-desc{
+        /* margin: 0 auto; */
+        /* border: 2px solid red; */
+        margin: 2em 0 2em 2em;
+    }
+    .contact{
+        /* width: 90%; */
+    }
+    .contact-container{
+        flex-direction: column;
+        /* align-items: center; */
+    }
+    .contact-img{
+        /* border: 2px solid red; */
+        width: 100%;
+        margin: 0 auto 2em auto;
+
+        
+    }
+    .contact-container .contact-img img{
+    }
+    .contact .contact-form{
+        text-align: center;
+        width: 100%;
+        /* border: 2px solid red; */
+    }
+}
